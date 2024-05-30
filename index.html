@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Blog de estudante da DIO</title>
+</head>
+<body>
+    <header id="home">
+        <div class="container">
+            <h1>Primeiros Passos com HTML</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#history">História</a></li>
+                        <li><a href="#html">HTML</a></li>
+                        <li><a href="#servers">Server</a></li>
+                        <li><a href="#client">Client</a></li>
+                        <li><a href="#links">Referências</a></li>
+                    </ul>
+                </nav>
+        </div>
+    </header>
+
+<section id="history">
+    <div class="container">
+        <h2>História dos computadores</h2>
+        <p><b>Harvard Mark I (1944):</b> Também conhecido como <i>Automatic Sequence Controlled Calculator</i> (ASCC), foi um dos primeiros computadores eletromecânicos. Desenvolvido em colaboração entre Harvard e IBM, o Mark I tinha 15 metros de comprimento e 2,5 metros de altura, e utilizava cartões perfurados para entrada e saída de dados
+        <p><b>ENIAC (1946):</b> O primeiro computador eletrônico digital de uso geral, o ENIAC utilizava 18.000 válvulas e consumia 200 quilowatts de energia. Ele foi revolucionário para cálculos balísticos e outras aplicações científicas</p>
+        <p><b>Transistores:</b> Substituindo as válvulas, os transistores permitiram computadores menores, mais rápidos e mais eficientes energeticamente. O uso de linguagens de programação como <i>Assembly</i> também começou a se popularizar</p>
+        <p><b>Circuitos Integrados:</b> Os circuitos integrados (chips) substituíram os transistores, aumentando ainda mais a eficiência e a capacidade dos computadores. Esta geração viu a introdução de sistemas operacionais e linguagens de programação de alto nível como <i>COBOL</i> e <i>FORTRAN​</i> </p>
+        <p><b>Microprocessadores:</b> A introdução dos microprocessadores, que são circuitos integrados muito mais complexos, marcou esta era. Computadores pessoais começaram a se popularizar, com modelos como o Apple II e o IBM PC se tornando comuns. Disquetes e outros meios de armazenamento removível facilitaram a distribuição de software​</p>
+        <a href="#home"><p><small>Voltar</small></p></a>
+    </div>
+</section>
+
+<section id="html">
+    <div class="container">
+        <h2>Como é uma estrutura básica de um HTML?</h2>
+        <p>A estrutura básica de um documento <b>HTML</b> é composta por elementos essenciais que formam a base de qualquer página web.</p>
+        <img src="./images/estruturabasica.png" alt="Imagem da estrutura básica do HTML 5">
+        <h3>Explicação dos Elementos</h3>
+        <nav>
+            <ol>
+                <li><b>&lt;!DOCTYPE html&gt;</b>: Esta declaração define o tipo de documento e a versão do HTML utilizada. É essencial para que os navegadores renderizem a página corretamente.</li>
+                <li><b>&lt;html lang="pt-BR"&gt;</b>: Este elemento envolve todo o conteúdo da página. O atributo lang especifica o idioma do documento (português do Brasil, neste caso).</li>
+                <li><b>&lt;head&gt;</b>: Esta seção contém metadados sobre o documento, como o conjunto de caracteres, título, e configurações de visualização.</li>
+                    <ul>
+                        <li><b>&lt;meta charset="UTF-8"&gt;</b>: Define a codificação de caracteres do documento para UTF-8, garantindo que caracteres especiais sejam exibidos corretamente.</li>
+                        <li><b>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</b>: Configura a visualização para dispositivos móveis, ajustando a largura da página à largura da tela.</li>
+                        <li><b>&lt;title&gt;Título da Página&lt;/title&gt;</b>: Define o título da página, que aparece na aba do navegador.</li>
+                    </ul>
+                <li><b>&lt;body&gt;</b>: Esta seção contém o conteúdo visível da página.</li>
+                <ul>
+                    <li><b>&lt;h1&gt;Olá, Mundo!&lt;/h1&gt;</b>: Um cabeçalho de nível 1 que geralmente representa o título principal da página.</li>
+                    <li><b>&lt;p&gt;Este é um parágrafo de exemplo.&lt;/p&gt;</b>: Um parágrafo de texto.</li>
+                </ul>
+            </ol>
+        </nav>
+        <a href="#home"><p><small>Voltar</small></p></a>
+    </div>
+</section>
+
+<section id="servers">
+    <div class="container">
+        <h2>O que são <i>Servers</i>?</h2>
+        <p>Servers são computadores ou sistemas de software dedicados a fornecer <i>recursos, dados, serviços ou programas</i> a outros computadores, conhecidos como clientes, em uma rede. Eles desempenham um papel fundamental na arquitetura de redes e na infraestrutura de TI.</p>
+        <h3>Funções Básicas dos Servidores</h3>
+            <ol>
+                <li><b>Armazenamento de Dados</b>: Servidores de arquivos armazenam e gerenciam arquivos para acesso e compartilhamento entre usuários na rede.</li>
+                <li><b>Hospedagem de Aplicações</b>: Servidores de aplicação executam programas e aplicativos que são acessados remotamente por clientes.</li>
+                <li><b>Gerenciamento de Banco de Dados</b>: Servidores de banco de dados armazenam e recuperam dados para aplicações e usuários.</li>
+                <li><b>Serviços Web</b>: Servidores web hospedam sites e fornecem conteúdo via HTTP/HTTPS para navegadores web.</li>
+                <li><b>Serviços de Email</b>: Servidores de email gerenciam o envio, recebimento e armazenamento de emails.</li>
+            </ol>
+        <hr>
+        <h3>Tipos de servidores</h3>
+            <ol>
+                <li><b>Servidor de Arquivos</b>: Armazena e gerencia arquivos, facilitando o compartilhamento de dados entre usuários.</li>
+                <li><b>Servidor de Banco de Dados</b>: Hospeda bancos de dados e responde a consultas feitas por clientes.</li>
+                <li><b>Servidor Web</b>: Hospeda páginas web e os torna acessíveis na internet.</li>
+                <li><b>Servidor de Email</b>: Garante o envio, recebimento e armazenamento de mensagens de email.</li>
+                <li><b>Servidor de Aplicações</b>: Hospeda e executa aplicativos de software.</li>
+                <li><b>Servidor de Jogos</b>: Hospeda e gerencia jogos online, permitindo que jogadores se conectem e joguem juntos.</li>
+                <li><b>Servidor de Proxy</b>: Atua como intermediário para solicitações de clientes, melhorando a segurança e o desempenho da rede.</li>
+            </ol>
+        <hr>
+        <h4>Exemplos:</h4>
+            <ul>
+                <li><b>Apache HTTP Server</b>: Um dos servidores web mais utilizados no mundo.</li>
+                <li><b>Microsoft SQL Server</b>: Um servidor de banco de dados relacional desenvolvido pela Microsoft.</li>
+                <li><b>MySQL</b>: Um servidor de banco de dados relacional <i>open-source</i> muito popular.</li>
+                <li><b>Microsoft Exchange Server</b>: Um servidor de email e calendário desenvolvido pela Microsoft.</li>
+                <li><b>Nginx</b>: Um servidor web e proxy reverso que também pode funcionar como balanceador de carga.</li>
+            </ul>
+            <a href="#home"><p><small>Voltar</small></p></a>
+    </div>
+</section>
+
+<section id="client">
+    <div class="container">
+        <h2>O que são <i>Clients</i>?</h2>
+        <p>Na arquitetura de redes de computadores, um <b>client</b> (ou cliente) é um dispositivo ou programa que solicita serviços ou recursos de um servidor. A relação entre cliente e servidor é a base da computação em rede, onde os servidores fornecem dados, serviços ou recursos, e os clientes os utilizam.</p>
+        <h3>Funções dos Clientes</h3>
+            <ol>
+                <li><b>Solicitação de Serviços</b>: Clientes enviam solicitações a servidores para acessar dados, executar programas ou obter serviços específicos.</li>
+                <li><b>Interface com Usuários</b>: Clientes geralmente possuem interfaces de usuário (UI) que permitem aos usuários interagir facilmente com os serviços oferecidos pelos servidores.</li>
+                <li><b>Processamento Local</b>: Embora muitos processos sejam realizados no servidor, os clientes também podem executar processamento local para tarefas específicas.</li>
+            </ol>
+        <hr>
+        <h3>Tipos de Clientes</h3>
+            <ol>
+                <li><b>Clientes Web</b>: Navegadores de internet como Google Chrome, Mozilla Firefox e Microsoft Edge, que solicitam e exibem páginas web de servidores web.</li>
+                <li><b>Clientes de Email</b>: Programas como Microsoft Outlook, Mozilla Thunderbird e Apple Mail, que permitem aos usuários enviar, receber e organizar emails.</li>
+                <li><b>Clientes de Banco de Dados</b>: Aplicativos que se conectam a servidores de banco de dados para consultas e manipulação de dados, como MySQL Workbench ou SQL Server Management Studio.</li>
+                <li><b>Clientes de Jogo</b>: Programas usados para acessar servidores de jogos online, como o Steam ou o cliente do jogo World of Warcraft.</li>
+                <li><b>Clientes de FTP</b>: Programas que transferem arquivos entre um cliente e um servidor, como FileZilla ou WinSCP.</li>
+            </ol>
+        <hr>
+        <h4>Exemplos:</h4>
+            <ul>
+                <li><b>Navegadores de Internet</b>: Permitem aos usuários acessar e interagir com conteúdo da web. Exemplos incluem Google Chrome, Mozilla Firefox, Safari e Microsoft Edge.</li>
+                <li><b>Clientes de Email</b>: Facilitam a gestão de emails. Exemplos incluem Microsoft Outlook, Gmail (web-based), e Mozilla Thunderbird.</li>
+                <li><b>Aplicativos de Mensagens</b>: Programas como WhatsApp, Slack, e Microsoft Teams, que permitem comunicação instantânea entre usuários.</li>
+                <li><b>Clientes de Banco de Dados</b>: Softwares como MySQL Workbench, que permite a administração e manipulação de bancos de dados.</li>
+            </ul>
+        <hr>
+        <h3>Funcionamento Básico</h3>
+            <ol>
+                <li><b>Conexão</b>: O cliente inicia uma conexão com o servidor usando um protocolo de rede, como HTTP, FTP, SMTP, etc.</li>
+                <li><b>Solicitação</b>: O cliente envia uma solicitação ao servidor, por exemplo, um navegador solicitando uma página web.</li>
+                <li><b>Resposta</b>: O servidor processa a solicitação e envia uma resposta ao cliente, como uma página HTML no caso de um servidor web.</li>
+                <li><b>Exibição/Processamento</b>: O cliente exibe os dados ou processa a resposta conforme necessário, permitindo ao usuário interagir com o conteúdo ou serviço.</li>
+            </ol>
+            <a href="#home"><p><small>Voltar</small></p></a>
+    </div>
+</section>
+
+<section id="links">
+    <div class="container">
+        <h2>Links de referências</h2>
+        <p>Aqui deixo alguns links que podem ajudar a entender melhor o assunto!</p>
+        <ul>
+            <li><a target="_blank" href="https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/HTML_basics">HTML Básico</a></li>
+            <li><a target="_blank" href="https://pt.wikipedia.org/wiki/Hist%C3%B3ria_da_computa%C3%A7%C3%A3o">Wikipedia &#40;História da computação&#41;</a></li>
+            <li><a target="_blank" href="https://www.diferenca.com/evolucao-dos-computadores/">Evolução dos computadores</a></li>
+            <li><a target="_blank" href="https://www.todamateria.com.br/historia-e-evolucao-dos-computadores/">História + Evolução dos computadores</a></li>
+            <li><a target="_blank" href="https://caracteristicas.pt/historia-do-computador/">História do computador</a></li>
+            <li><a target="_blank" href="https://pt.wikipedia.org/wiki/Servidor_(inform%C3%A1tica)">O oque são servidores</a></li>
+            <li><a target="_blank" href="https://www.ibm.com/docs/pt-br/cics-ts/5.6?topic=programs-clientserver-model">Cliente / servidor</a></li>
+        </ul>
+    </div>
+</section>
+    <footer>
+        <p>&copy;Todos os direitos reservados - 2024</p>
+    </footer>
+</body>
+</html>
